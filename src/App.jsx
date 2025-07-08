@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Footer from './components/Footer';
+import Card from './components/Card';
 
 function App() {
   return (
-    <>
-      <Footer />
-    </>
+    <div className='App'>
+      <Card />
+    </div>
   );
 }
 
