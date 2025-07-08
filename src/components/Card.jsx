@@ -16,7 +16,7 @@ const Card = () => {
         name='Cherry'
         dis_price='KES 430'
         price='KES 550'
-        description='Cherry Cuticle Oil'
+        description='Sweet and fruity moisture for soft, healthy cuticles'
       />
       <ProductCard
         image={watermelon}
@@ -24,7 +24,7 @@ const Card = () => {
         name='Watermelon'
         dis_price='KES 430'
         price='KES 550'
-        description='Watermelon Cuticle Oil'
+        description='Light, fresh moisture with a summer-sweet watermelon aroma'
       />
       <ProductCard
         image={pineapple}
@@ -32,7 +32,7 @@ const Card = () => {
         name='Pineapple'
         dis_price='KES 430'
         price='KES 550'
-        description='Pineapple Cuticle Oil'
+        description='Tropical hydration with a juicy, uplifting pineapple scent'
       />
       <ProductCard
         image={lavender}
@@ -40,7 +40,7 @@ const Card = () => {
         name='Lavender'
         dis_price='KES 430'
         price='KES 550'
-        description='Lavender Cuticle Oil'
+        description='Calms your senses while deeply nourishing dry cuticles'
       />
       <ProductCard
         image={orange}
@@ -48,7 +48,7 @@ const Card = () => {
         name='Orange'
         dis_price='KES 430'
         price='KES 550'
-        description='Orange Cuticle Oil'
+        description='Zesty citrus oil that refreshes and hydrates instantly'
       />
     </div>
   );
