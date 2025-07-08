@@ -2,18 +2,17 @@ import React from 'react';
 import Image from '../assets/cuticle oils/cherry.JPG';
 import './ProductCard.css';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
   return (
     <div className='product_box'>
-      <img src={Image} alt='Cherry Cuticle Oil' />
+      <img src={props.image} alt={props.alt} />
       <div className='description'>
-        <h2>Cherry</h2>
+        <h2>{props.name}</h2>
         <p className='price'>
-          KES 430 <span>KES 550</span>{' '}
+          {props.dis_price}
+          <span>{props.price}</span>{' '}
         </p>
-        <p className='para'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, tenetur.
-        </p>
+        <p className='para'>{props.description}</p>
         <button className='btn-buynow'>Buy Now</button>
       </div>
     </div>
