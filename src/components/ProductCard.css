@@ -1,5 +1,5 @@
 .product_box {
-  width: 320px;
+  width: 280px;
   overflow: hidden;
   max-height: 570px;
   padding: 10px;
@@ -9,7 +9,7 @@
 
 .product_box img {
   width: 100%;
-  height: 320px;
+  height: 300px;
   object-fit: cover;
 }
 
