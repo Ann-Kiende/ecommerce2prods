@@ -89,8 +89,20 @@ a.active {
 }
 
 .hamburger {
-  color: #fff;
+  /* color: #fff; */
   margin-right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.hamburger div {
+  width: 20px;
+  height: 2px;
+  margin: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
 }
 
 /* Mobile styles (default) */
