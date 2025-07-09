@@ -3,6 +3,8 @@ import './NavBar.css';
 import smalllogo2 from '../assets/smalllogo2.png';
 
 const NavBar = () => {
+  const [isMenuOpen, SetIsMenuOpen] = false;
+
   return (
     <div className='NavBar'>
       {/* Logo */}
@@ -29,7 +31,12 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className='hamburger'>☰</div>
+      <div className='hamburger'>
+        {/* ☰ */}
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
+      </div>
     </div>
   );
 };
