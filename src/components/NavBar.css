@@ -1,7 +1,7 @@
 .NavBar {
   background-color: #9f6496;
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
   height: 60px;
   /* gap: 30px; */
   justify-content: space-around;
@@ -50,6 +50,18 @@ a.active {
   /* color: #fff; */
   outline: none;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#search-bar:focus {
+  background-color: #fff;
+  color: #9f6496;
+}
+
+#search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .login-btn {
@@ -77,5 +89,31 @@ a.active {
 }
 
 .hamburger {
-  display: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* Mobile styles (default) */
+@media (max-width: 767px) {
+  .nav-links,
+  .nav-right .cart,
+  .nav-right .login-btn {
+    display: none;
+  }
+
+  .NavBar {
+    justify-content: space-between; /* Logo left, search right */
+    padding: 10px 20px;
+  }
+
+  #search-bar {
+    width: 150px; /* Smaller search bar on mobile */
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
