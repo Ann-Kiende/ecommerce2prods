@@ -97,6 +97,7 @@ a.active {
   transition: all 0.3s ease;
 }
 
+/* Hamburger lines */
 .hamburger div {
   width: 20px;
   height: 2px;
@@ -105,12 +106,44 @@ a.active {
   transition: all 0.3s ease;
 }
 
+/* Rotate first line to form X */
+.hamburger.open .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+/* Fade out second line */
+.hamburger.open .line2 {
+  opacity: 0;
+}
+
+/* Rotate third line to form X */
+.hamburger.open .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
 /* Mobile styles (default) */
 @media (max-width: 767px) {
   .nav-links,
   .nav-right .cart,
   .nav-right .login-btn {
     display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .nav-links.mobile-visible {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px; /* Below navbar */
+    left: 0;
+    width: 100%;
+    background: #9f6496;
+    padding: 20px 0;
   }
 
   .NavBar {

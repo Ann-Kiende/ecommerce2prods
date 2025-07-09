@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.css';
 import smalllogo2 from '../assets/smalllogo2.png';
 
 const NavBar = () => {
-  const [isMenuOpen, SetIsMenuOpen] = false;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className='NavBar'>
@@ -13,7 +13,8 @@ const NavBar = () => {
       </a>
 
       {/* Desktop Nav  */}
-      <div className='nav-links'>
+      <div className={`nav-links ${isMenuOpen ? 'mobile-visible' : ''}`}>
+        {/* When isMenuOpen is true, the mobile-visible class is added */}
         <a href='/'>Home</a>
         <a href='/' className='active'>
           Products
@@ -31,7 +32,9 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className='hamburger'>
+      <div
+        className={`hamburger ${isMenuOpen ? 'open' : ''}`} //   Toggles true/false
+      >
         {/* ☰ */}
         <div className='line1'></div>
         <div className='line2'></div>
