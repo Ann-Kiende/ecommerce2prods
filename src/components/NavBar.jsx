@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import './NavBar.css';
 import smalllogo2 from '../assets/smalllogo2.png';
+import { FaBars } from 'react-icons/fa6';
+import { MdClose } from 'react-icons/md';
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+
+    //   const toggleMenu = () => {
+    //     setIsOpen((prev) => !prev);
+  };
 
   return (
     <div className='NavBar'>
@@ -13,8 +22,7 @@ const NavBar = () => {
       </a>
 
       {/* Desktop Nav  */}
-      <div className={`nav-links ${isMenuOpen ? 'mobile-visible' : ''}`}>
-        {/* When isMenuOpen is true, the mobile-visible class is added */}
+      <div className={isOpen ? 'nav-links active' : 'nav-links'}>
         <a href='/'>Home</a>
         <a href='/' className='active'>
           Products
@@ -32,13 +40,8 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`hamburger ${isMenuOpen ? 'open' : ''}`} //   Toggles true/false
-      >
-        {/* ☰ */}
-        <div className='line1'></div>
-        <div className='line2'></div>
-        <div className='line3'></div>
+      <div className='hamburger' onClick={toggleMenu}>
+        {isOpen ? <MdClose /> : <FaBars />}
       </div>
     </div>
   );
