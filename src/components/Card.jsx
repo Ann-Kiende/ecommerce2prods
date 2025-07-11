@@ -7,6 +7,7 @@ import lavender from '../assets/cuticle oils/lavender.JPG';
 import orange from '../assets/cuticle oils/orange.JPG';
 import pineapple from '../assets/cuticle oils/pineapple.JPG';
 import watermelon from '../assets/cuticle oils/watermelon.JPG';
+import Footer from './Footer';
 
 const Card = () => {
   return (
@@ -58,7 +59,9 @@ const Card = () => {
         />
       </div>
 
-      <div className='footer'>Footer</div>
+      <div className='footer'>
+        <Footer />
+      </div>
     </>
   );
 };
