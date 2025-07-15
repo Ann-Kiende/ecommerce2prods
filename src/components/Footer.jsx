@@ -2,6 +2,10 @@ import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa6';
 import { FaFacebook } from 'react-icons/fa';
+import { FaCcVisa } from 'react-icons/fa6';
+import { FaCcMastercard } from 'react-icons/fa6';
+import { FaCcPaypal } from 'react-icons/fa';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -68,6 +72,14 @@ const Footer = () => {
           <a href='#'>
             <FaFacebook />
           </a>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className='copyright'>
+        <p>&copy; {new Date().getFullYear()} Haba Haba. All rights reserved</p>
+        <div className='payment-methods'>
+          <FaCcVisa /> <FaCcMastercard /> <FaCcPaypal />
         </div>
       </div>
     </div>
