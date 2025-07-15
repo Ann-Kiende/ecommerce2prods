@@ -9,8 +9,8 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    // Quick Links
     <div className='footer'>
+      {/* Quick Links */}
       <div className='footer-section'>
         <h3>Shop</h3>
         <ul>
@@ -21,9 +21,12 @@ const Footer = () => {
             <a href='/category/sale'>Special Offers</a>
           </li>
         </ul>
+        <div className='payment-methods'>
+          <FaCcVisa /> <FaCcMastercard /> <FaCcPaypal />
+        </div>
       </div>
 
-      {/* Customer Service */}
+      {/* Customer Service / Help */}
       <div className='footer-section'>
         <h3>Help</h3>
         <ul>
@@ -61,7 +64,7 @@ const Footer = () => {
         <form className='newsletter-form'>
           <input type='email' placeholder='Your email' />
           <button type='submit'>Subscribe</button>
-        </form>
+        </form>{' '}
         <div className='social-icons'>
           <a href='#'>
             <FaInstagram />
@@ -78,9 +81,6 @@ const Footer = () => {
       {/* Copyright */}
       <div className='copyright'>
         <p>&copy; {new Date().getFullYear()} Haba Haba. All rights reserved</p>
-        <div className='payment-methods'>
-          <FaCcVisa /> <FaCcMastercard /> <FaCcPaypal />
-        </div>
       </div>
     </div>
   );
