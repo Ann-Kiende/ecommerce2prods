@@ -53,7 +53,7 @@ const Footer = () => {
             <a href='/blog'>Blog</a>
           </li>
           <li>
-            <a href='/privacy'>Privacy Policy</a>
+            <a href='./ecommerce2prods/privacy'>Privacy Policy</a>
           </li>
         </ul>
       </div>

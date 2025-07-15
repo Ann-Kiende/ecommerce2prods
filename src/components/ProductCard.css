@@ -54,8 +54,6 @@ span {
 }
 
 .product {
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
