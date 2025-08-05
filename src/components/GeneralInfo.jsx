@@ -1,6 +1,14 @@
 import React from 'react';
+import ProductCard from 'ProductCard';
+import { createBrowserRouter } from 'react-router-dom';
 
 const GeneralInfo = () => {
+  const router = createBrowserRouter([
+    { path: '/', element: <Home /> },
+    { path: '/products', element: <ProductCard /> },
+    { path: '/about', element: <About /> },
+  ]);
+
   return (
     <div>
       <h1>Privacy Policy for Haba Haba</h1>
