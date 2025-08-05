@@ -3,31 +3,42 @@ import './NavBar.css';
 import smalllogo2 from '../assets/smalllogo2.png';
 import { FaBars } from 'react-icons/fa6';
 import { MdClose } from 'react-icons/md';
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-
-    //   const toggleMenu = () => {
-    //     setIsOpen((prev) => !prev);
   };
+
+  const closeMobileMenu = () => setIsOpen(false);
 
   return (
     <div className='NavBar'>
       {/* Logo */}
-      <a href='/' className='logo'>
-        <img src={smalllogo2}></img>
-      </a>
+      <NavLink to='/' className='logo' onClick={closeMobileMenu}>
+        <img alt='Haba Haba Logo' src={smalllogo2}></img>
+      </NavLink>
 
       {/* Desktop Nav  */}
       <div className={isOpen ? 'nav-links active' : 'nav-links'}>
-        <a href='/'>Home</a>
-        <a href='/' className='active'>
+        <NavLink to='/'>Home</NavLink>
+        <NavLink
+          to='/products'
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          onClick={closeMobileMenu}
+          end
+        >
           Products
-        </a>
-        <a href='/'>About</a>
+        </NavLink>
+        <NavLink
+          to='/about'
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          onClick={closeMobileMenu}
+        >
+          About
+        </NavLink>
       </div>
 
       {/* Right Side Nav */}
