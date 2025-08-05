@@ -1,6 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar';
 import ProductCard from './ProductCard';
+import App from '../App';
+import About from './About';
 import './ProductCard.css';
 import cherry from '../assets/cuticle oils/cherry.JPG';
 import lavender from '../assets/cuticle oils/lavender.JPG';
@@ -8,14 +10,11 @@ import orange from '../assets/cuticle oils/orange.JPG';
 import pineapple from '../assets/cuticle oils/pineapple.JPG';
 import watermelon from '../assets/cuticle oils/watermelon.JPG';
 import Footer from './Footer';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const Card = () => {
   return (
     <>
-      <div className='menu'>
-        <NavBar></NavBar>
-      </div>
-
       <div className='product'>
         <ProductCard
           image={cherry}
@@ -57,10 +56,6 @@ const Card = () => {
           price='KES 550'
           description='Zesty citrus oil that refreshes and hydrates instantly'
         />
-      </div>
-
-      <div className='footer'>
-        <Footer />
       </div>
     </>
   );
