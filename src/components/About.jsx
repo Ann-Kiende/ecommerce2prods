@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import founder from '../assets/about/founder.jpg';
+import founder from '../assets/about/founder.jpeg';
 import ingredients from '../assets/about/ingredients.jpg';
 import signature from '../assets/about/signature.png';
 import workshop from '../assets/about/workshop.jpg';
