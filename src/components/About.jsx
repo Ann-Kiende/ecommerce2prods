@@ -4,10 +4,11 @@ import founder from '../assets/about/founder.jpeg';
 import ingredients from '../assets/about/ingredients.jpg';
 import signature from '../assets/about/signature.png';
 import workshop from '../assets/about/workshop.jpg';
+import './About.css';
 
 const About = () => {
   return (
-    <>
+    <div className='about-card'>
       <div>
         <h1>Our Story</h1>
         <p>Small Batch • Handcrafted • Sustainably Sourced</p>
@@ -21,7 +22,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </strong>
         </p>
-        <img src={founder} alt='Founder' />
+        <img className='founder about-img' src={founder} alt='Founder' />
       </div>
 
       <div className='about-section'>
@@ -58,12 +59,16 @@ const About = () => {
           [hobby/need] grew into a passion for sharing wellness."
           <cite>— Ann Kiende, Founder</cite>
         </blockquote>
-        <img src={signature} alt='Signature' className='signature' />
+        <img className='signature about-img' src={signature} alt='Signature' />
       </div>
 
       <div className='about-gallery'>
-        <img src={workshop} alt='Workspace' />
-        <img src={ingredients} alt='Fresh Ingredients' />
+        <img className='workshop about-img' src={workshop} alt='Workspace' />
+        <img
+          className='ingredients about-img'
+          src={ingredients}
+          alt='Fresh Ingredients'
+        />
       </div>
 
       <div className='about-cta'>
@@ -72,7 +77,7 @@ const About = () => {
           Shop Now
         </Link> */}
       </div>
-    </>
+    </div>
   );
 };
 
