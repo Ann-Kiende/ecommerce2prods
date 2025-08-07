@@ -33,6 +33,13 @@ const NavBar = () => {
           Products
         </NavLink>
         <NavLink
+          to='/help'
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          onClick={closeMobileMenu}
+        >
+          Help
+        </NavLink>
+        <NavLink
           to='/about'
           className={({ isActive }) => (isActive ? 'active' : '')}
           onClick={closeMobileMenu}
