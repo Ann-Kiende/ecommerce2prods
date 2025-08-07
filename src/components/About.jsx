@@ -44,14 +44,8 @@ const About = () => {
 
       <div className='about-section'>
         <h2>From Our Hands to Yours</h2>
-        <p>
-          Each [product] is crafted over [time period] using [unique method].
-        </p>
-        <div className='process-steps'>
-          <p style={{ fontStyle: 'italic' }}>
-            Ingredient Sourcing → Handcrafting → Quality Check
-          </p>
-        </div>
+        <p>Each product is crafted over 6 months using our unique method.</p>
+        <p>Ingredient Sourcing → Handcrafting → Quality Check</p>
       </div>
 
       <div className='founder-note'>
