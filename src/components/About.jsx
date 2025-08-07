@@ -9,8 +9,9 @@ import './About.css';
 const About = () => {
   return (
     <div className='about-card'>
-      <div>
+      <div className='our-story'>
         <h1>Our Story</h1>
+        <p>We are a one product store</p>
         <p>Small Batch • Handcrafted • Sustainably Sourced</p>
       </div>
 
@@ -47,17 +48,21 @@ const About = () => {
           Each [product] is crafted over [time period] using [unique method].
         </p>
         <div className='process-steps'>
-          <div>1. Ingredient Sourcing</div>
-          <div>2. Handcrafting</div>
-          <div>3. Quality Check</div>
+          <p style={{ fontStyle: 'italic' }}>
+            Ingredient Sourcing → Handcrafting → Quality Check
+          </p>
         </div>
       </div>
 
       <div className='founder-note'>
         <blockquote>
-          "I started making [products] after [personal story]. What began as
-          [hobby/need] grew into a passion for sharing wellness."
-          <cite>— Ann Kiende, Founder</cite>
+          "I started making cuticle oils after Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Sit accusantium, atque laudantium
+          commodi, sed explicabo consequuntur optio ut velit id et pariatur
+          neque molestias. Magnam sequi ex quasi a fugit. What began as passion
+          for nail manicures and pedicures grew into a passion for sharing
+          cuticle health in your pocket."
+          <cite>Ann Kiende, Founder</cite>
         </blockquote>
         <img className='signature about-img' src={signature} alt='Signature' />
       </div>
