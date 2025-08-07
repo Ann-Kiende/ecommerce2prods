@@ -44,7 +44,7 @@ const NavBar = () => {
           className={({ isActive }) => (isActive ? 'active' : '')}
           onClick={closeMobileMenu}
         >
-          About
+          About Us
         </NavLink>
       </div>
 
