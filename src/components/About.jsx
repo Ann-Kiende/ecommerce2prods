@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import founder from '../assets/about/founder.jpeg';
 import ingredients from '../assets/about/ingredients.jpg';
 import signature from '../assets/about/signature.png';
@@ -56,9 +56,13 @@ const About = () => {
           neque molestias. Magnam sequi ex quasi a fugit. What began as passion
           for nail manicures and pedicures grew into a passion for sharing
           cuticle health in your pocket."
+          <img
+            className='signature about-img'
+            src={signature}
+            alt='Signature'
+          />
           <cite>Ann Kiende, Founder</cite>
         </blockquote>
-        <img className='signature about-img' src={signature} alt='Signature' />
       </div>
 
       <div className='about-gallery'>
@@ -71,10 +75,10 @@ const About = () => {
       </div>
 
       <div className='about-cta'>
-        <h3>Ready to Experience [Product]?</h3>
-        {/* <Link to='/card' className='cta-button'>
+        <h3>Ready to Experience our Products?</h3>
+        <NavLink to='/products' className='cta-button'>
           Shop Now
-        </Link> */}
+        </NavLink>
       </div>
     </div>
   );
