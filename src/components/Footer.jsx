@@ -6,6 +6,7 @@ import { FaCcVisa } from 'react-icons/fa6';
 import { FaCcMastercard } from 'react-icons/fa6';
 import { FaCcPaypal } from 'react-icons/fa';
 import './Footer.css';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,10 +16,10 @@ const Footer = () => {
         <h3>Shop</h3>
         <ul>
           <li>
-            <a href='/products'>All Products</a>
+            <NavLink to='/products'>All Products</NavLink>
           </li>
           <li>
-            <a href='/category/sale'>Special Offers</a>
+            <NavLink to='/'>Special Offers</NavLink>
           </li>
         </ul>
         <div className='payment-methods'>
@@ -47,7 +48,7 @@ const Footer = () => {
         <h3>Our Company</h3>
         <ul>
           <li>
-            <a href='/about'>About Us</a>
+            <NavLink to='/about'>About Us</NavLink>
           </li>
           <li>
             <a href='/blog'>Blog</a>
