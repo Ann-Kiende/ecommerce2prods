@@ -23,7 +23,13 @@ const NavBar = () => {
 
       {/* Desktop Nav  */}
       <div className={isOpen ? 'nav-links active' : 'nav-links'}>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink
+          to='/'
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          onClick={closeMobileMenu}
+        >
+          Home
+        </NavLink>
         <NavLink
           to='/products'
           className={({ isActive }) => (isActive ? 'active' : '')}
