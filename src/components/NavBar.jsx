@@ -4,6 +4,7 @@ import smalllogo2 from '../assets/smalllogo2.png';
 import { FaBars } from 'react-icons/fa6';
 import { MdClose } from 'react-icons/md';
 import { NavLink, Link } from 'react-router-dom';
+import dropdown from './dropdown';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,7 @@ const NavBar = () => {
           Products
         </NavLink>
         <NavLink
-          to='/help'
+          to='/dropdown'
           className={({ isActive }) => (isActive ? 'active' : '')}
           onClick={closeMobileMenu}
         >
