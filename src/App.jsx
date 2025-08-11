@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Help from './components/Help';
 import Contact from './components/Contact';
+import Dropdown from './components/Dropdown';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<Card />} />
-        <Route path='/help' element={<Help />} />
+        {/* <Route path='/help' element={<Help />} /> */}
+        <Route path='/dropdown' element={<Dropdown />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
