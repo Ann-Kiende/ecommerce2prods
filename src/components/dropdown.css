@@ -1,10 +1,20 @@
 .dropdown-btn {
   background-color: #efefef;
-  margin: 0 auto 40px auto;
+  margin: 10px auto 0 auto;
   padding: 20px 40px;
   border-radius: 5px;
   width: 666px;
   height: auto;
+}
+
+.dropdown-btn:last-child {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .dropdown-btn {
+    width: 85%;
+  }
 }
 
 .dropdown-heading {
