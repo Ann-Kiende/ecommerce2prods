@@ -1,12 +1,45 @@
 import { React, useState } from 'react';
-import './dropdown.css';
+import './Dropdown.css';
+import { BsFillCartCheckFill } from 'react-icons/bs';
+import { FaPlus, FaMinus } from 'react-icons/fa';
 
-const dropdown = () => {
+const Dropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className='dropdown-btn'>
-      <div className='dropdown-heading'>name</div>
+      <div className='dropdown-heading' onClick={toggleMenu}>
+        <div className='dd-img'>
+          <BsFillCartCheckFill />
+        </div>
+        <div className='dd-title'>How to track your order?</div>
+        <div className='dd-toggle'>{isOpen ? <FaMinus /> : <FaPlus />}</div>
+      </div>
+
+      {isOpen && (
+        <div className='dropdown-content'>
+          <ul className='dd-ul'>
+            <li className='dd-li'>
+              Click the drop-down arrow beside your name and select Orders.
+            </li>
+            <li className='dd-li'>
+              Click <strong>SEE DETAILS</strong> in front of the order you want
+              to track.
+            </li>
+            <li className='dd-li'>
+              Click <strong>TRACK MY ITEM</strong> button in front of the order
+              you wish to track.
+            </li>
+            <li className='dd-li'>Delivery history is displayed.</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
 
-export default dropdown;
+export default Dropdown;
