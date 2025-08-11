@@ -4,7 +4,7 @@ import smalllogo2 from '../assets/smalllogo2.png';
 import { FaBars } from 'react-icons/fa6';
 import { MdClose } from 'react-icons/md';
 import { NavLink, Link } from 'react-router-dom';
-import dropdown from './dropdown';
+import dropdown from './Dropdown';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
