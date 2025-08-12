@@ -11,12 +11,6 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
-  .dropdown-btn {
-    width: 85%;
-  }
-}
-
 .dropdown-heading {
   display: flex;
   margin-bottom: 10px;
@@ -27,6 +21,17 @@
   font-weight: bold;
   color: #9f6496;
   transition: all 0.2s ease-out;
+}
+
+@media (max-width: 768px) {
+  .dropdown-btn {
+    width: 99%;
+    padding: 20px;
+  }
+
+  .dropdown-content {
+    margin: 25px 0;
+  }
 }
 
 /* .dd-title:hover {
