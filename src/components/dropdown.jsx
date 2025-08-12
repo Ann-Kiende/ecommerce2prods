@@ -21,14 +21,14 @@ const Dropdown = (props) => {
       {isOpen && (
         <div className='dropdown-content'>
           <ul className='dd-ul'>
-            {Array.isArray(props.list) ? (
-              props.list.map((item, index) => (
+            {Array.isArray(list) ? (
+              list.map((item, index) => (
                 <li key={index} className='dd-li'>
                   {item}
                 </li>
               ))
             ) : (
-              <li className='dd-li'>{props.list}</li>
+              <li className='dd-li'>{list}</li>
             )}
           </ul>
         </div>
