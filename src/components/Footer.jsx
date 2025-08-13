@@ -35,7 +35,7 @@ const Footer = () => {
             <NavLink to='/shipping'>Shipping Policy</NavLink>
           </li>
           <li>
-            <a href='/returns'>Returns & Exchanges</a>
+            <NavLink to='/refundspolicy'>Refunds & Exchanges</NavLink>
           </li>
           <li>
             <NavLink to='/contact'>Contact Us</NavLink>

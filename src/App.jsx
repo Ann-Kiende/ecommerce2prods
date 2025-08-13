@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Help from './components/Help';
 import Contact from './components/Contact';
 import Shipping from './components/footer/Shipping';
+import ReturnsAndExchanges from './components/footer/RefundsAndExchanges';
 // import Dropdown from './components/Dropdown';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/shipping' element={<Shipping />} />
+        <Route path='/refundspolicy' element={<ReturnsAndExchanges />} />
       </Routes>
       <Footer />
     </div>
