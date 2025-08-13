@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Help from './components/Help';
 import Contact from './components/Contact';
+import Shipping from './components/footer/Shipping';
 // import Dropdown from './components/Dropdown';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         {/* <Route path='/dropdown' element={<Dropdown />} /> */}
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/shipping' element={<Shipping />} />
       </Routes>
       <Footer />
     </div>
