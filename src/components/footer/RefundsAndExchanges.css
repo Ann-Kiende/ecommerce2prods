@@ -1,0 +1,44 @@
+.policy {
+  margin-bottom: 40px;
+  padding: 0 40px;
+  line-height: 1.5rem;
+}
+
+.r-title h4 {
+  padding: 20px 0 10px 0;
+  color: red;
+}
+
+.r-ol {
+  padding-left: 25px;
+}
+
+.r-li {
+  margin: 15px 0;
+  font-weight: bold; /* Makes ALL text bold (including nested content) */
+}
+
+.r-li li {
+  margin-left: 20px;
+}
+
+.r-li h4 {
+  padding: 0;
+}
+
+.r-li ul,
+li {
+  font-weight: normal;
+}
+
+#support-more {
+  margin: 0;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: inherit !important; /* Forces same size as parent */
+}
+
+.r-ol h4 {
+  color: rebeccapurple;
+}
