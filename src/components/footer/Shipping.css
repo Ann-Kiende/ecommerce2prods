@@ -1,0 +1,55 @@
+.shipping-container {
+  margin-bottom: 40px;
+  padding: 0 40px;
+  line-height: 1.5rem;
+}
+
+.s-title h2 {
+  text-align: left;
+}
+
+.s-title p {
+  padding: 20px 0 10px 0;
+  text-align: left;
+}
+
+.s-ol {
+  padding-left: 20px;
+}
+
+.s-li {
+  margin: 15px 0;
+  font-weight: bold; /* Makes ALL text bold (including nested content) */
+}
+
+.s-li li {
+  margin-left: 20px;
+}
+
+table {
+  margin: 15px 0;
+  border-collapse: collapse; /* ensures borders match seamlessly */
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #9f6496;
+}
+.s-li {
+  /* Makes ALL text bold (including nested content) */
+}
+
+.s-li ul,
+p,
+table {
+  font-weight: normal; /* Reverts nested items back to normal */
+}
+
+#support-more {
+  margin: 0;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: inherit !important; /* Forces same size as parent */
+}
