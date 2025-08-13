@@ -32,7 +32,7 @@ const Footer = () => {
         <h3>Help</h3>
         <ul>
           <li>
-            <a href='/shipping'>Shipping Policy</a>
+            <NavLink to='/shipping'>Shipping Policy</NavLink>
           </li>
           <li>
             <a href='/returns'>Returns & Exchanges</a>
