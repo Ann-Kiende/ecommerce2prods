@@ -4,7 +4,10 @@ import './Privacy.css';
 const Privacy = () => {
   return (
     <div className='privacy-container'>
-      <p id='dateid'>Last Updated: [Date]</p>
+      <div className='p-title'>
+        <h2>Privacy Policy</h2>
+        <p id='dateid'>Last Updated: [Date]</p>
+      </div>
 
       <ol className='p-ol'>
         <li className='p-li'>
