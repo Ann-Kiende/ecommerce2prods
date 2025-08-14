@@ -32,26 +32,31 @@ const Shipping = () => {
           Shipping Options & Delivery Times
           <p>We offer the following shipping methods (may vary by location):</p>
           <table>
-            <tr>
-              <th>Shipping Method</th>
-              <th>Estimated Delivery Time</th>
-              <th>Coverage</th>
-            </tr>
-            <tr>
-              <td>Standard Shipping</td>
-              <td>3-7 business days</td>
-              <td>Nationwide (Kenya)</td>
-            </tr>
-            <tr>
-              <td>Express Shipping</td>
-              <td>1-3 business days</td>
-              <td>Major Cities (Nairobi, Mombasa, Kisumu, etc.)</td>
-            </tr>
-            <tr>
-              <td>International Shipping*</td>
-              <td>7-21 business days</td>
-              <td>Selected Countries</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Shipping Method</th>
+                <th>Estimated Delivery Time</th>
+                <th>Coverage</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Standard Shipping</td>
+                <td>3-7 business days</td>
+                <td>Nationwide (Kenya)</td>
+              </tr>
+              <tr>
+                <td>Express Shipping</td>
+                <td>1-3 business days</td>
+                <td>Major Cities (Nairobi, Mombasa, Kisumu, etc.)</td>
+              </tr>
+              <tr>
+                <td>International Shipping*</td>
+                <td>7-21 business days</td>
+                <td>Selected Countries</td>
+              </tr>
+            </tbody>
           </table>
           <p>*International shipping rates and times vary by destination.</p>
         </li>
