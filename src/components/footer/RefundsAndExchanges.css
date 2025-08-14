@@ -31,14 +31,14 @@ li {
   font-weight: normal;
 }
 
+.r-li ol li {
+  margin-left: 25px;
+}
+
 #support-more {
   margin: 0;
   text-decoration: none;
   color: blue;
   font-weight: bold;
   font-size: inherit !important; /* Forces same size as parent */
-}
-
-.r-ol h4 {
-  color: rebeccapurple;
 }
