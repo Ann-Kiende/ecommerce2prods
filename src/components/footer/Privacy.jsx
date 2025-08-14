@@ -2,11 +2,22 @@ import React, { useState } from 'react';
 import './Privacy.css';
 
 const Privacy = () => {
+  const date = new Date();
+
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  const formatTime = (time) => (time < 10 ? `0${time}` : time);
+
+  const showTime = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(
+    seconds
+  )}`;
   return (
     <div className='privacy-container'>
       <div className='p-title'>
         <h2>Privacy Policy</h2>
-        <p id='dateid'>Last Updated: [Date]</p>
+        <p id='dateid'>Last Updated: {showTime}</p>
       </div>
 
       <ol className='p-ol'>
