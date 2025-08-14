@@ -5,7 +5,7 @@ const ReturnsAndExchanges = () => {
   return (
     <div className='policy'>
       <div className='r-title'>
-        <h2>Haba Haba Cuticle Oil Policy</h2>
+        <h2>Refunds & Exchanges Policy</h2>
       </div>
       <ol className='r-ol'>
         <li className='r-li'>
