@@ -6,13 +6,15 @@ const ReturnsAndExchanges = () => {
     <div className='policy'>
       <div className='r-title'>
         <h2>Haba Haba Cuticle Oil Policy</h2>
-        <h4>All Sales Are Final</h4>
       </div>
       <ol className='r-ol'>
         <li className='r-li'>
-          We do not accept returns or exchanges on opened cuticle oil products
-          due to:
+          All Sales Are Final
           <ul>
+            <p>
+              We do not accept returns or exchanges on opened cuticle oil
+              products due to:
+            </p>
             <li>
               <strong>Hygiene regulations</strong> (personal care product
               safety)
@@ -28,10 +30,10 @@ const ReturnsAndExchanges = () => {
           </ul>
         </li>
 
-        <h4 className='r-subheading'>Damaged or Defective Products</h4>
         <li className='r-li'>
-          Contact us within 24 hours of delivery if:
+          Damaged or Defective Products
           <ul>
+            <p>Contact us within 24 hours of delivery if:</p>
             <li>Bottle is leaking or broken</li>
             <li>Seal was tampered with during shipping</li>
             <li>Wrong product was received</li>
@@ -39,9 +41,12 @@ const ReturnsAndExchanges = () => {
         </li>
 
         <li className='r-li'>
-          📧 Email: <span id='support-more'>support@habahabastore.com</span>{' '}
-          with:
+          Contact Process for Refunds
           <ol>
+            <p>
+              📧 Email: <span id='support-more'>support@habahabastore.com</span>{' '}
+              with:
+            </p>
             <li>Order number</li>
             <li>Photos of damaged item + packaging</li>
             <li>Brief description of issue</li>
@@ -52,10 +57,10 @@ const ReturnsAndExchanges = () => {
           </p>
         </li>
 
-        <h4 className='r-subheading'>Choosing Your Products Carefully</h4>
         <li className='r-li'>
-          Recommendations:
+          Choosing Your Products Carefully
           <ol>
+            <p>Recommendations:</p>
             <li>
               Review product descriptions and ingredient lists before purchasing
             </li>
@@ -63,18 +68,17 @@ const ReturnsAndExchanges = () => {
             <li>Contact us for personalized recommendations</li>
           </ol>
         </li>
-
-        <h4 className='r-subheading'>Customer Support</h4>
-        <p>
-          ✉️ <strong>Email:</strong> care@habahabastore.com
-        </p>
-        <p>
-          📞 <strong>Phone:</strong> +254700 000 000{' '}
-        </p>
-        <p>
-          ⏰ <strong>Response Time:</strong> Within 1 business day
-        </p>
       </ol>
+      <h4 className='r-subheading'>Customer Support</h4>
+      <p>
+        ✉️ <strong>Email:</strong> care@habahabastore.com
+      </p>
+      <p>
+        📞 <strong>Phone:</strong> +254700 000 000{' '}
+      </p>
+      <p>
+        ⏰ <strong>Response Time:</strong> Within 1 business day
+      </p>
     </div>
   );
 };
