@@ -42,7 +42,7 @@ const ReturnsAndExchanges = () => {
 
         <li className='r-li'>
           Contact Process for Refunds
-          <ol>
+          <ol className='r-inner'>
             <p>
               📧 Email: <span id='support-more'>support@habahabastore.com</span>{' '}
               with:

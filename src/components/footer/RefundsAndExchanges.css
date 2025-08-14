@@ -27,7 +27,7 @@ li {
 }
 
 .r-li ol li {
-  margin-left: 25px;
+  margin-left: 25pxpx;
 }
 
 #support-more {
@@ -36,4 +36,12 @@ li {
   color: blue;
   font-weight: bold;
   font-size: inherit !important; /* Forces same size as parent */
+}
+
+.r-inner {
+  margin-bottom: 15px;
+}
+
+.r-inner li {
+  margin-left: 25px;
 }
