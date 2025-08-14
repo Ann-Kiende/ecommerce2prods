@@ -1,0 +1,31 @@
+.privacy-container {
+  margin-bottom: 40px;
+  padding: 0 40px;
+  line-height: 1.5rem;
+}
+
+.p-ol {
+  padding-left: 25px;
+}
+
+.p-li {
+  margin: 15px 0;
+  font-weight: bold; /* Makes ALL text bold (including nested content) */
+}
+
+.p-li li,
+.p-ul {
+  margin-left: 20px;
+}
+
+.first {
+  margin-bottom: 15px;
+}
+
+#support-more {
+  margin: 0;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: inherit !important; /* Forces same size as parent */
+}
