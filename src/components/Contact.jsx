@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import callCenter from '../assets/callcenter.jpg';
-import Dropdown from './Dropdown';
+import Dropdown from './dropdown';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import { TbShoppingCartCancel } from 'react-icons/tb';
 import { TbTruckReturn } from 'react-icons/tb';
