@@ -1,3 +1,7 @@
+.product {
+  margin: 40px auto;
+}
+
 .product_box {
   width: 280px;
   overflow: hidden;
@@ -6,14 +10,6 @@
   padding: 10px;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111) 0px 7px 10px 0px;
-}
-
-.product_box:first-child {
-  margin-top: 40px;
-}
-
-.product_box:last-child {
-  margin-bottom: 40px;
 }
 
 .product_box img {
