@@ -87,7 +87,7 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  width: 200px;
+  width: 300px;
 }
 
 .benefits-icons h4 {
@@ -112,9 +112,10 @@
   margin: 30px auto; /* Center the list */
 }
 
-video {
-  align-items: center;
-  height: 250px;
+iframe {
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
 
 @media (max-width: 768px) {

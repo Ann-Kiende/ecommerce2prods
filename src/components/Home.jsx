@@ -50,7 +50,15 @@ const Home = () => {
           <li>Massage gently for 10 seconds.</li>
           <li>Repeat daily for stronger nails.</li>
         </ol>
-        <div id='demo-video'>[-----Video Demo here-----]</div>
+
+        <iframe
+          width='50%'
+          height='450'
+          src='https://www.youtube.com/embed/X0vWXMnUxsw'
+          title='Haba Haba Cuticle Oil Pen Demo'
+          allow='fullscreen; picture-in-picture' //lets video go fullscreen
+          loading='lazy'
+        ></iframe>
       </div>
 
       <div className='social-proof'>
