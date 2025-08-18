@@ -52,7 +52,7 @@ const Home = () => {
         </ol>
 
         <iframe
-          width='50%'
+          width='100%'
           height='450'
           src='https://www.youtube.com/embed/X0vWXMnUxsw'
           title='Haba Haba Cuticle Oil Pen Demo'
