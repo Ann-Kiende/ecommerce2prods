@@ -54,6 +54,7 @@
   color: #9f6496;
   background-color: #fff;
   border: 1px solid #9f6496;
+  cursor: pointer;
 }
 
 .trust-badge {
@@ -70,7 +71,9 @@
 }
 
 .benefits-title,
-.demo h2 {
+.demo h2,
+.social-proof h2,
+.final-cta h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -116,6 +119,82 @@ iframe {
   display: block;
   margin: 0 auto;
   border: none;
+}
+
+.social-proof {
+  color: #fff;
+  background-color: #521a47;
+  /* width: 80%; */
+  padding: 30px;
+  margin: 0 auto 30px;
+  /* border-radius: 5px; */
+  text-align: center;
+}
+
+.reviews {
+  background-color: #9f6496;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto 20px;
+  padding: 30px;
+}
+
+#reviews-content {
+  padding: 15px 0;
+}
+
+#reviews-name {
+  font-style: italic;
+}
+
+#press-logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: #ffffff87;
+  flex-wrap: nowrap;
+}
+
+#press-logos li {
+  list-style-type: none;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+  padding: 0 0 0;
+}
+
+.final-cta {
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1.5;
+  color: #9f6496;
+}
+
+/* Targets the first h4 inside .final-cta */
+.final-cta h4:nth-of-type(1) {
+  color: red;
+  /* font-weight: lighter; */
+  animation: blink 4s infinite;
+}
+
+.final-cta .cta-btn {
+  margin: 20px auto;
+}
+
+/* #cta-bonus {
+  color: #9f6496;
+} */
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
