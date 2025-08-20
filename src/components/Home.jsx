@@ -12,6 +12,7 @@ const Home = () => {
           src={Hero}
           className='hero-image'
           alt='Haba Haba Cuticle Oil Pen'
+          loading='lazy'
         />
         <div className='hero-content'>
           <h2 className='hero-title'>Nourish Your Nails Like Never Before</h2>
@@ -95,7 +96,9 @@ const Home = () => {
 
       <div className='final-cta'>
         <h2>Ready for Healthier Nails?</h2>
-        <h4>Limited stock—treat your cuticles today.</h4>
+        <h4 className='urgent-text'>
+          Limited stock—treat your cuticles today.
+        </h4>
         <button className='cta-btn'>Add to Cart</button>
         <h4 id='cta-bonus'>Offer a free nail file with first purchase</h4>
       </div>
