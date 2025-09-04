@@ -30,6 +30,7 @@
   --space-4: 1rem; /* 16px */
   --space-6: 1.5rem; /* 24px */
   --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
   --space-12: 3rem; /* 48px */
   --space-16: 4rem; /* 64px */
   --space-20: 5rem; /* 80px */
@@ -104,10 +105,9 @@
 .benefits {
   background: linear-gradient(135deg, #9f6496, #521a47);
   color: #fff;
-  padding: 0 var(--space-12) var(--space-12);
+  padding: var(--space-16) var(--space-8);
 }
 
-.benefits-title h2,
 .demo h2,
 .social-proof h2,
 .final-cta h2 {
@@ -116,19 +116,32 @@
   text-align: center;
 }
 
+.benefits-title {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.benefits-title h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: var(--space-4);
+}
+
 .benefits-content {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .benefits-icons {
   color: #9f6496;
-  background-color: #fff;
-  padding: var(--space-8);
-  border-radius: 1rem;
-  width: 350px;
+  background: #fff;
+  padding: var(--space-10);
+  border-radius: var(--space-4);
+  /* width: 370px; */
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px #521a4785;
 }
@@ -139,7 +152,7 @@
 }
 
 .benefits-icons h4 {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   font-size: var(--font-size-2xl);
   color: #521a47;
   margin-bottom: var(--space-4);
@@ -268,6 +281,6 @@ iframe {
 
   .benefits-icons {
     width: 100%;
-    padding: var(--space-12);
+    padding: var(--space-10);
   }
 }
