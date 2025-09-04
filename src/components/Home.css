@@ -102,9 +102,9 @@
 }
 
 .benefits {
-  background-color: #9f6496;
+  background: linear-gradient(135deg, #9f6496, #521a47);
   color: #fff;
-  padding: 0 var(--space-12) var(--space-12) var(--space-12);
+  padding: 0 var(--space-12) var(--space-12);
 }
 
 .benefits-title h2,
@@ -126,9 +126,9 @@
 .benefits-icons {
   color: #9f6496;
   background-color: #fff;
-  padding: var(--space-12);
+  padding: var(--space-8);
   border-radius: 1rem;
-  width: 300px;
+  width: 350px;
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px #521a4785;
 }
@@ -153,22 +153,30 @@
 .demo {
   color: #9f6496;
   padding: 0 var(--space-12) var(--space-12) var(--space-12);
+  background: #fafafa;
 }
 
 .how-to {
   line-height: var(--leading-relaxed);
   display: table; /* Makes margin auto work */
   margin: 0 auto; /* Center the list */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: var(--space-8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: var(--space-12);
+  border-radius: var(--space-4);
+}
+
+ol {
+  min-width: 600px;
 }
 
 .how-to li {
   font-size: var(--font-size-xl);
   padding: var(--space-4);
-  border-radius: 16px;
-  background-color: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  margin: 2px;
+  border-radius: var(--space-2);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  margin-bottom: var(--space-4);
+  border-left: 4px solid #9f6496;
+  font-weight: var(--font-medium);
 }
 
 iframe {
@@ -185,6 +193,7 @@ iframe {
   /* padding: 4rem 2rem; */
   margin: 0 auto 30px;
   text-align: center;
+  padding-bottom: var(--space-12);
 }
 
 .reviews {
