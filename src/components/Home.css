@@ -108,7 +108,6 @@
   padding: var(--space-16) var(--space-8);
 }
 
-.demo h2,
 .social-proof h2,
 .final-cta h2 {
   font-size: var(--font-size-3xl);
@@ -116,20 +115,21 @@
   text-align: center;
 }
 
-.benefits-title {
+.benefits-title,
+.demo-title {
   text-align: center;
   margin-bottom: var(--space-12);
 }
 
-.benefits-title h2 {
+.benefits-title h2,
+.demo h2 {
   font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: var(--space-4);
 }
 
 .benefits-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--space-8);
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -165,8 +165,12 @@
 
 .demo {
   color: #9f6496;
-  padding: 0 var(--space-12) var(--space-12) var(--space-12);
+  padding: var(--space-16) var(--space-8);
   background: #fafafa;
+}
+
+.demo h2 {
+  color: #521a47;
 }
 
 .how-to {
