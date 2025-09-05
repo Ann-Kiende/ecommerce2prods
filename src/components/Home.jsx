@@ -81,8 +81,6 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='pricing-offer'></div>
-
       <div className='faqs'>
         <DropDown
           title='How often should I use it?'
