@@ -79,19 +79,25 @@
 }
 
 .cta-btn {
-  padding: 10px 30px;
-  font-size: 15px;
-  border-radius: 50px;
-  border: 1px solid #9f6496;
-  background-color: #9f6496;
+  background: linear-gradient(135deg, #9f6496, #521a47);
   color: #fff;
-  transition: all 0.5s ease;
+  border-radius: 50px;
+  border: 2px solid #9f6496;
+  padding: var(--space-4) var(--space-10);
+  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-semibold);
+  margin: var(--space-8) 0;
+  transition: transform 0.5s ease;
+  letter-spacing: 0.5px;
 }
 
 .cta-btn:hover {
+  transform: translateY(-3px);
   color: #9f6496;
-  background-color: #fff;
-  border: 1px solid #9f6496;
+  background: #fff;
+  box-shadow: 0 10px 25px #9f649666;
+  border: 2px solid #9f6496;
   cursor: pointer;
 }
 
@@ -171,7 +177,7 @@
   line-height: var(--leading-relaxed);
   display: table; /* Makes margin auto work */
   margin: 0 auto; /* Center the list */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: var(--space-12);
   border-radius: var(--space-4);
 }
@@ -190,6 +196,10 @@ ol {
   font-weight: var(--font-medium);
 }
 
+.how-to li:last-child {
+  margin-bottom: 0;
+}
+
 iframe {
   display: block;
   margin: 0 auto;
@@ -205,10 +215,6 @@ iframe {
   padding: var(--space-16) var(--space-8);
 }
 
-.social-proof h2 {
-  /* margin-bottom: var(--space-8); */
-}
-
 .reviews {
   margin: var(--space-8) auto var(--space-12);
   padding: var(--space-10);
@@ -220,7 +226,8 @@ iframe {
   transition: transform 0.3s ease;
 }
 
-.reviews:hover {
+.reviews:hover,
+#press-logos li:hover {
   transform: translateY(-5px);
 }
 
@@ -260,12 +267,25 @@ iframe {
   color: rgba(255, 255, 255, 0.7);
   padding: var(--space-4) var(--space-6);
   border-radius: var(--space-8);
-  /* margin-bottom: var(--space-6); */
+  transition: transform 0.3s ease;
   font-weight: var(--font-bold);
 }
 
+#press-logos li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+.faqs {
+  padding: var(--space-16) var(--space-8);
+}
+
 .final-cta {
-  margin: 40px auto;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  margin: var(--space-16) auto;
+  border-radius: var(--space-8);
+  padding: var(--space-16) var(--space-12);
+  max-width: 600px;
   text-align: center;
   line-height: 1.5;
   color: #9f6496;
@@ -273,38 +293,74 @@ iframe {
 
 .final-cta h2 {
   font-size: var(--font-size-3xl);
-  padding: var(--space-12);
+  margin-bottom: var(--space-4);
+  /* padding: var(--space-12); */
   text-align: center;
+  color: #521a47;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 /* Targets the first h4 inside .final-cta */
 .final-cta h4:nth-of-type(1) {
   color: red;
-  animation: blink 4s infinite;
+  animation: pulse 2s infinite;
 }
 
-.final-cta .cta-btn {
-  margin: 20px auto;
+.urgent-text {
+  margin-bottom: var(--space-8);
 }
 
-@keyframes blink {
+#cta-bonus {
+  font-style: italic;
+  font-weight: var(--font-medium);
+  margin-top: var(--space-4);
+}
+
+@keyframes pulse {
   0%,
-  50% {
+  100% {
     opacity: 1;
   }
-  75%,
-  100% {
-    opacity: 0;
+  50% {
+    opacity: 0.7;
   }
 }
 
 @media (max-width: 768px) {
   .hero-content {
-    max-width: 90%;
+    max-width: 95%;
+    padding: var(--space-6);
+  }
+
+  .benefits-content {
+    grid-template-columns: 1fr;
   }
 
   .benefits-icons {
     width: 100%;
     padding: var(--space-10);
+  }
+
+  #press-logos {
+    gap: var(--space-6);
+  }
+
+  .how-to {
+    min-width: 90%;
+    margin: var(--space-6) auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-btn {
+    padding: var(--space-3) var(--space-8);
+    font-size: var(--font-size-base);
+  }
+
+  .benefits,
+  .demo,
+  .social-proof,
+  .final-cta {
+    padding: var(--space-8) var(--space-4);
   }
 }
