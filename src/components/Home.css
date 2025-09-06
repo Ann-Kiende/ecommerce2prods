@@ -159,7 +159,7 @@
   color: #9f6496;
   background: #fff;
   padding: var(--space-10);
-  border-radius: var(--space-4);
+  border-radius: 0 var(--space-4);
   /* width: 370px; */
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px #521a4785;
@@ -238,7 +238,7 @@
   margin: var(--space-8) auto var(--space-12);
   padding: var(--space-10);
   max-width: 400px;
-  border-radius: var(--space-4);
+  border-radius: 0 var(--space-4);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
