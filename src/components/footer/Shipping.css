@@ -36,13 +36,10 @@ td {
   padding: 10px;
   border-bottom: 1px solid #9f6496;
 }
-.s-li {
-  /* Makes ALL text bold (including nested content) */
-}
 
-.s-li ul,
-p,
-table {
+.shipping-container .s-li ul,
+.shipping-container p,
+.shipping-container table {
   font-weight: normal; /* Reverts nested items back to normal */
 }
 
