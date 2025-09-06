@@ -31,37 +31,33 @@ const Shipping = () => {
         <li className='s-li'>
           Shipping Options & Delivery Times
           <p>We offer the following shipping methods (may vary by location):</p>
-          <div className='table-container'>
-            <table className='stack-table'>
-              <thead>
-                <tr>
-                  <th>Shipping Method</th>
-                  <th>Estimated Delivery Time</th>
-                  <th>Coverage</th>
-                </tr>
-              </thead>
+          <table>
+            <thead>
+              <tr>
+                <th>Shipping Method</th>
+                <th>Estimated Delivery Time</th>
+                <th>Coverage</th>
+              </tr>
+            </thead>
 
-              <tbody>
-                <tr>
-                  <td data-label='Method'>Standard Shipping</td>
-                  <td data-label='Delivery Time'>3-7 business days</td>
-                  <td data-label='Coverage'>Nationwide (Kenya)</td>
-                </tr>
-                <tr>
-                  <td data-label='Method'>Express Shipping</td>
-                  <td data-label='Delivery Time'>1-3 business days</td>
-                  <td data-label='Coverage'>
-                    Major Cities (Nairobi, Mombasa, Kisumu, etc.)
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label='Method'>International Shipping*</td>
-                  <td data-label='Delivery Time'>7-21 business days</td>
-                  <td data-label='Coverage'>Selected Countries</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <tbody>
+              <tr>
+                <td>Standard Shipping</td>
+                <td>3-7 business days</td>
+                <td>Nationwide (Kenya)</td>
+              </tr>
+              <tr>
+                <td>Express Shipping</td>
+                <td>1-3 business days</td>
+                <td>Major Cities (Nairobi, Mombasa, Kisumu, etc.)</td>
+              </tr>
+              <tr>
+                <td>International Shipping*</td>
+                <td>7-21 business days</td>
+                <td>Selected Countries</td>
+              </tr>
+            </tbody>
+          </table>
           <p>*International shipping rates and times vary by destination.</p>
         </li>
         <li className='s-li'>
@@ -93,8 +89,8 @@ const Shipping = () => {
             </li>
             <li>
               For any delays or issues, contact us at{' '}
-              <span className='support-more'>support@habahabastore.com</span> or
-              call <strong>+254700 000 000 </strong>
+              <span id='support-more'>support@habahabastore.com</span> or call{' '}
+              <strong>+254700 000 000 </strong>
             </li>
           </ul>
         </li>
@@ -125,9 +121,8 @@ const Shipping = () => {
         <li className='s-li'>
           Returns & Refunds
           <p>
-            Please refer to our{' '}
-            <span className='support-more'>Return Policy</span> for details on
-            returns, refunds, and exchanges.
+            Please refer to our <span id='support-more'>Return Policy</span> for
+            details on returns, refunds, and exchanges.
           </p>
         </li>
         <li className='s-li'>
@@ -135,7 +130,7 @@ const Shipping = () => {
           <p>For any shipping-related questions, reach out to:</p>
           <p>
             📧 <strong>Email:</strong>{' '}
-            <span className='support-more'>support@habahabastore.com</span>
+            <span id='support-more'>support@habahabastore.com</span>
           </p>
           <p>
             📞 <strong>Phone:</strong> +254700 000 000

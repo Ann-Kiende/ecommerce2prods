@@ -1,57 +1,43 @@
 .shipping-container {
   margin: 40px auto;
-  padding: 0 5vw; /* Using viewport units for responsive padding*/
+  padding: 0 40px;
   line-height: 1.5rem;
-  max-width: 100%;
 }
 
 .s-title h2 {
   text-align: left;
-  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .s-title p {
   padding: 20px 0 10px 0;
   text-align: left;
-  font-size: clamp(1rem, 3vw, 1.1rem);
 }
 
 .s-ol {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .s-li {
-  margin: 20px 0;
+  margin: 15px 0;
   font-weight: bold; /* Makes ALL text bold (including nested content) */
 }
 
 .s-li li {
-  margin-left: 15px;
-}
-
-.table-container {
-  overflow-x: auto; /* Enables horizontal scrolling if needed */
-  width: 100%;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  margin-left: 20px;
 }
 
 table {
-  width: 100%;
-  min-width: 600px;
   margin: 15px 0;
   border-collapse: collapse; /* ensures borders match seamlessly */
 }
 
-.stack-table thead {
-  background-color: #9f6496;
-  color: #fff;
-}
-
 th,
 td {
-  padding: 12px 10px;
+  padding: 10px;
   border-bottom: 1px solid #9f6496;
-  font-size: clamp(0.85rem, 2.5vw, 1rem);
+}
+.s-li {
+  /* Makes ALL text bold (including nested content) */
 }
 
 .s-li ul,
@@ -60,76 +46,10 @@ table {
   font-weight: normal; /* Reverts nested items back to normal */
 }
 
-.support-more {
+#support-more {
   margin: 0;
   text-decoration: none;
   color: blue;
   font-weight: bold;
   font-size: inherit !important; /* Forces same size as parent */
-  word-break: break-all; /* Prevents long emails from overflowing */
-}
-
-@media (max-width: 768px) {
-  .shipping-container {
-    padding: 0 15px;
-  }
-
-  .s-li {
-    margin: 15px 0;
-  }
-
-  th,
-  td {
-    padding: 10px 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .s-ol {
-    padding-left: 15px;
-  }
-
-  .s-li li {
-    margin-left: 10px;
-  }
-
-  th,
-  td {
-    padding: 8px 6px;
-  }
-
-  .stack-table {
-    min-width: 100%; /* Slightly smaller text for very small screens */
-  }
-
-  .stack-table thead {
-    display: none;
-  }
-
-  .stack-table tr {
-    display: block;
-    margin-bottom: 15px;
-    border: 1px solid #9f6496;
-    border-radius: 5px;
-  }
-
-  .stack-table td {
-    display: block;
-    text-align: right;
-    position: relative;
-    padding-left: 50%;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .stack-table td:last-child {
-    border-bottom: none;
-  }
-
-  .stack-table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    font-weight: bold;
-    text-align: left;
-  }
 }
