@@ -45,7 +45,7 @@
 }
 
 .hero {
-  height: calc(100vh - 150px);
+  height: 90vh;
   position: relative;
 }
 
