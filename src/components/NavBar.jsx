@@ -53,6 +53,10 @@ const NavBar = () => {
         >
           About Us
         </NavLink>
+
+        <NavLink to='/login' className='mobile-login' onClick={closeMobileMenu}>
+          Login
+        </NavLink>
       </div>
 
       {/* Right Side Nav */}
