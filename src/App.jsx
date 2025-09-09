@@ -11,6 +11,8 @@ import Contact from './components/Contact';
 import Shipping from './components/footer/Shipping';
 import ReturnsAndExchanges from './components/footer/RefundsAndExchanges';
 import Privacy from './components/footer/Privacy';
+import Login from './components/user/Login';
+import Register from './components/user/Register';
 // import Dropdown from './components/Dropdown';
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path='/shipping' element={<Shipping />} />
         <Route path='/refundspolicy' element={<ReturnsAndExchanges />} />
         <Route path='/privacy' element={<Privacy />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
       <Footer />
     </div>
